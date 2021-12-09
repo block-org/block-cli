@@ -1,0 +1,20 @@
+{
+  "name": "@block-org/block-scripts",
+  "version": "0.0.0",
+  "description": "block scripts.",
+  "main": "lib/bin.js",
+  "types": "lib/interface.d.ts",
+  "bin": {
+    "block-scripts": "lib/bin.js"
+  },
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc && cp -rf src/scripts/changelog/template/ lib/scripts/changelog/template",
+    "clean": "rm -rf lib",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "lib"
+  ],
+  "license": "MIT"
+}

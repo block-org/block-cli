@@ -1,0 +1,47 @@
+{
+  "name": "@block-ui/block-cli",
+  "description": "Block UI CLI & Block UI Scripts",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "yarn && lerna bootstrap",
+    "format": "prettier --config .prettierrc --write \"packages/**/*.{js,jsx,ts,tsx}\"",
+    "eslint": "eslint packages/ --fix --cache --quiet --ext .js,.jsx,.ts,.tsx",
+    "stylelint": "stylelint 'packages/**/*.less' --fix --cache"
+  },
+  "lint-staged": {
+    "packages/**/*.{js,jsx,ts,tsx}": [
+      "npm run eslint",
+      "git add"
+    ],
+    "*.{css, less}": [
+      "npm run stylelint",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "eslint": "^8.4.1",
+    "eslint-config-airbnb": "^19.0.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-typescript": "^0.14.0",
+    "husky": "^7.0.4",
+    "lerna": "^4.0.0",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.1.0",
+    "stylelint-config-standard": "^24.0.0",
+    "typescript": "^4.5.2"
+  }
+}
