@@ -9,12 +9,15 @@
   },
   "scripts": {
     "dev": "tsc -w",
-    "build": "tsc && cp -rf src/scripts/changelog/template/ lib/scripts/changelog/template",
+    "build": "tsc",
     "clean": "rm -rf lib",
     "prepublishOnly": "npm run build"
   },
   "files": [
     "lib"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-typescript-compiler": "^2.3.0"
+  }
 }
