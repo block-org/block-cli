@@ -1,5 +1,5 @@
 import fs from 'fs-extra';
-import { print } from '@underlinen/dev-utils';
+import { print } from '@underspare/dev-utils';
 import { CWD } from '../../constant';
 
 /**

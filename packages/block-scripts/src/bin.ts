@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { program } from 'commander';
-import { print } from '@underlinen/dev-utils';
+import { print } from '@underspare/dev-utils';
 import component from './scripts/build/component';
 
 const { version } = require('../package.json');

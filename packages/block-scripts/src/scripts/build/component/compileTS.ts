@@ -1,7 +1,7 @@
 import path from 'path';
 import fs from 'fs-extra';
 import tsc from 'node-typescript-compiler';
-import { print } from '@underlinen/dev-utils'
+import { print } from '@underspare/dev-utils'
 import { BUILD_ENV_TS_COMPILER, CWD } from '../../../constant';
 import tscConfig from '../../../config/tsc.config';
 
