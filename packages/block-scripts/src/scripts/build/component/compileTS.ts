@@ -13,7 +13,7 @@ interface CompileOptions {
 }
 
 /**
- * Get config from tsconfig.json
+ * Get config from root project tsconfig.json
  * @param tsconfigPath 
  * @param subConfig 
  * @returns 

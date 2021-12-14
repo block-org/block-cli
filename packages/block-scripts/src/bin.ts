@@ -38,4 +38,8 @@ program.command('build:component:esm').action(() => {
   component.buildESM();
 });
 
+program.command('build:component:cjs').action(() => {
+  component.buildCJS();
+});
+
 program.parse(process.argv);
