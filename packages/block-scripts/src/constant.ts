@@ -19,3 +19,19 @@ export const DIR_NAME_ESM = 'esm';
 export const DIR_NAME_CJS = 'lib';
 
 export const DIR_NAME_UMD = 'dist';
+
+export const DIR_NAME_ASSET = 'asset';
+
+export const DIR_NAME_SOURCE = 'src';
+
+export const DIR_NAME_COMPONENT_LIBRARY = 'components';
+
+export const FILENAME_DIST_LESS = 'index.less';
+
+export const FILENAME_DIST_CSS = 'index.css';
+
+export const FILENAME_STYLE_ENTRY_RAW = 'index.js';
+
+export const FILENAME_STYLE_ENTRY_CSS = 'css.js';
+
+export const BLOCK_LIBRARY_PACKAGE_NAME_REACT = '@block-org/block-ui';

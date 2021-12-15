@@ -42,4 +42,8 @@ program.command('build:component:cjs').action(() => {
   component.buildCJS();
 });
 
+program.command('build:component:css').action(() => {
+  component.buildCSS();
+});
+
 program.parse(process.argv);
