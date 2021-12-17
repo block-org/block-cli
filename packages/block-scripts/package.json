@@ -1,6 +1,6 @@
 {
   "name": "@block-org/block-scripts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "block scripts.",
   "main": "lib/bin.js",
   "types": "lib/interface.d.ts",
@@ -18,6 +18,8 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@underspare/dev-utils": "^0.0.2",
+    "commander": "^8.3.0",
     "chokidar": "^3.5.1",
     "merge-stream": "^2.0.0",
     "node-typescript-compiler": "^2.3.0",
