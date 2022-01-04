@@ -1,5 +1,5 @@
 import webpack from 'webpack'
-import { print } from '@underlinen/dev-utils'
+import { print } from '@underspare/dev-utils'
 
 export default (config, callback?) => {
   return new Promise<void>((resolve, reject) => {

@@ -11,7 +11,7 @@ import tscConfig from '../tsc.config';
 import { webpackExternalForBlock, getUse } from '../utils'
 
 const { name: packageName, version } = require(`${CWD}/package.json`);
-const packageNameWithoutScope = packageName.replace(/^@[^\/]+\//, '');]
+const packageNameWithoutScope = packageName.replace(/^@[^\/]+\//, '');
 // todo
 // const version = '0.0.1'
 // const packageName = '@block-org/block-ui'
