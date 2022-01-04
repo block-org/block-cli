@@ -43,7 +43,7 @@ let config = {
   output: {
     path: `${CWD}/${DIR_NAME_UMD}`,
     publicPath: `https://unpkg.com/${packageName}/@latest/${DIR_NAME_UMD}`,
-    fileName: '[name].min.js',
+    filename: '[name].min.js',
     library: '[name]',
     // perfer type
     libraryTarget: 'umd'
@@ -52,7 +52,7 @@ let config = {
     rules: [
       {
         test: /\.tsx?$/,
-        exclues: /node_modules/,
+        exclude: /node_modules/,
         use: [
           {
             loader: 'balel-loder',
@@ -164,7 +164,7 @@ if (BUILD_ENV_MODE) {
   config.mode = BUILD_ENV_MODE;
 }
 if (BUILD_ENV_DIST_FILENAME_JS) {
-  config.output.fileName = BUILD_ENV_DIST_FILENAME_JS;
+  config.output.filename = BUILD_ENV_DIST_FILENAME_JS;
 }
 
 export default config;
