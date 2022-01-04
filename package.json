@@ -7,6 +7,8 @@
   ],
   "scripts": {
     "bootstrap": "yarn && lerna bootstrap",
+    "clean": "lerna run clean",
+    "build": "lerna run build",
     "format": "prettier --config .prettierrc --write \"packages/**/*.{js,jsx,ts,tsx}\"",
     "eslint": "eslint packages/ --fix --cache --quiet --ext .js,.jsx,.ts,.tsx",
     "stylelint": "stylelint 'packages/**/*.less' --fix --cache"
