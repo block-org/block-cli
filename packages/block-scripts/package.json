@@ -18,15 +18,21 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@block-org/block-babel-config": "^0.0.1",
     "@underspare/dev-utils": "^0.0.2",
+    "@svgr/webpack": "^4.2.0",
     "commander": "^8.3.0",
     "chokidar": "^3.5.1",
     "merge-stream": "^2.0.0",
     "node-typescript-compiler": "^2.3.0",
+    "css-loader": "^3.2.1",
+    "file-loader": "^1.1.11",
     "less": "^3.13.1",
     "less-loader": "~4.1.0",
     "less-plugin-autoprefix": "^2.0.0",
     "less-plugin-npm-import": "^2.1.0",
+    "postcss-loader": "4.3.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
     "fs-extra": "^9.0.0",
     "glob": "^7.1.2",
     "gulp": "^4.0.2",
@@ -39,8 +45,11 @@
     "gulp-replace": "^1.0.0",
     "gulp-typescript": "^5.0.1",
     "gulp-watch": "^5.0.1",
+    "style-loader": "^1.2.1",
     "through2": "^4.0.2",
     "vinyl-fs": "^3.0.3",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.3.8",
     "parse-es-import": "^0.3.1"
   }
 }

@@ -16,10 +16,10 @@ process.on('unhandledRejection', (err) => {
 const subCommandList = [
   'dev:component',
   'build:component',
-  'build:component:css',
-  'build:component:dist',
+  'build:component:umd',
   'build:component:esm',
   'build:component:cjs',
+  'build:component:css',
 ];
 
 program
@@ -40,6 +40,10 @@ program.command('build:component:esm').action(() => {
 
 program.command('build:component:cjs').action(() => {
   component.buildCJS();
+});
+
+program.command('build:component:umd').action(() => {
+  component.buildUMD();
 });
 
 program.command('build:component:css').action(() => {
