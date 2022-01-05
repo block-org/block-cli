@@ -37,7 +37,7 @@ let config = {
   mode: 'production',
   // https://webpack.js.org/configuration/entry-context/#entry
   entry: {
-    block: `${CWD}/${DIR_NAME_COMPONENT_LIBRARY}/index.tsx`,
+    'block-ui': `${CWD}/${DIR_NAME_COMPONENT_LIBRARY}/index.tsx`,
   },
   // https://webpack.js.org/configuration/output/
   output: {
@@ -55,11 +55,11 @@ let config = {
         exclude: /node_modules/,
         use: [
           {
-            loader: 'balel-loder',
+            loader: 'babel-loader',
             options: babelConfig,
           },
           {
-            loader: 'ts-lodaer',
+            loader: 'ts-loader',
             options: getTSLoaderOptions(),
           },
         ],
@@ -155,7 +155,7 @@ if (realProcessor) {
 // Compatible, avoid the outer layer directly set the entry as a string
 if (typeof config.entry === 'string') {
   config.entry = {
-    block: config.entry,
+    'block-ui': config.entry,
   };
 }
 
