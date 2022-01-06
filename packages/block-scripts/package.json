@@ -33,6 +33,7 @@
     "less-plugin-autoprefix": "^2.0.0",
     "less-plugin-npm-import": "^2.1.0",
     "postcss-loader": "4.3.0",
+    "lodash.debounce": "^4.0.8",
     "progress-bar-webpack-plugin": "^2.1.0",
     "fs-extra": "^9.0.0",
     "glob": "^7.1.2",
