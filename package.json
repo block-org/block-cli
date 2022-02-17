@@ -1,5 +1,5 @@
 {
-  "name": "@block-ui/block-cli",
+  "name": "@block-org/block-cli",
   "description": "Block UI CLI & Block UI Scripts",
   "private": "true",
   "workspaces": [
