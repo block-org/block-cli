@@ -23,7 +23,7 @@ interface CompileOptions {
 }
 
 /**
- * Get config from root project tsconfig.json
+ * Get config from pre / root project tsconfig.json ...
  * @param tsconfigPath 
  * @param subConfig 
  * @returns 
@@ -152,6 +152,7 @@ async function withBabel({ type, outDir, watch }: CompileOptions) {
         });
 
         const files = [];
+
         const debouncedCompileFiles = debounce(() => {
           while (files.length) {
             createStream(files.pop());
